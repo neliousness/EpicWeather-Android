@@ -38,7 +38,7 @@ The app uses the following APIs to gather weather data
 - http://api.weatherapi.com - for gathering weather data
 
 ### Development Duration
-The app took an estimated 16 hours to complete where 4 hours were dedicated to design and 12 development. 
+The app took an estimated 18 hours to complete where 4 hours were dedicated to design and 12 development. 
 
 The app is available for download here [Link](https://codechallenge.dicemz.com/)
 
