@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardCornerRadius="10dp"
+        android:elevation="0dp"
+        android:id="@+id/itemRoot"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/primaryLight"
+        android:backgroundTint="@color/secondaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginStart="5dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:id="@+id/city_item_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="36sp"
+                        android:textColor="#DCDCDC"
+                        android:text="28" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/city_item_weather_icon"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/cloud" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Maputo"
+                    android:id="@+id/city_item_city"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Mozambique"
+                    android:id="@+id/city_item_country"
+                    android:textColor="#707070"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/water_drop"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+                        <TextView
+                            android:id="@+id/city_item_humidity"
+                            android:text="27%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/wind"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+                        <TextView
+                            android:id="@+id/city_item_wind"
+                            android:text="27%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
